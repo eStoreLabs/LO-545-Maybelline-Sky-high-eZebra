@@ -28,8 +28,19 @@
   /******* cross sell styles ************/
   /**************************************/
   /**************************************/
+  /*********** banner styles ************/
+  /**************************************/
+  /**************************************/
   /*********** footer styles ************/
   /**************************************/
+}
+#es-rc #es-rc-content ::-moz-selection {
+  background-color: #C55E71;
+  color: #FFF;
+}
+#es-rc #es-rc-content ::selection {
+  background-color: #C55E71;
+  color: #FFF;
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -319,6 +330,12 @@
   width: 185px;
   gap: 16px;
 }
+#es-rc #es-rc-content .es-available-colors .es-colors__single .es-colors__imgContainer img {
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-available-colors .es-colors__single:hover .es-colors__imgContainer img {
+  scale: 1.1;
+}
 #es-rc #es-rc-content .es-available-colors .es-colors__single--text {
   background-color: #B9827D;
   padding-block: 16px;
@@ -339,6 +356,18 @@
   align-items: center;
   padding: 16px;
   max-width: 300px;
+}
+#es-rc #es-rc-content .es-available-colors .es-before-after__img--1,
+#es-rc #es-rc-content .es-available-colors .es-before-after__img--2 {
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-available-colors .es-before-after__img--1 img,
+#es-rc #es-rc-content .es-available-colors .es-before-after__img--2 img {
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-available-colors .es-before-after__img--1 img:hover,
+#es-rc #es-rc-content .es-available-colors .es-before-after__img--2 img:hover {
+  scale: 1.1;
 }
 #es-rc #es-rc-content .es-available-colors .es-before-after__text {
   background-color: #B9827D;
@@ -565,8 +594,7 @@
 #es-rc #es-rc-content .es-cross__packshot {
   margin-bottom: 16px;
   padding-bottom: 16px;
-  width: 100%;
-  height: 250px;
+  width: 80%;
 }
 #es-rc #es-rc-content .es-cross__img {
   max-height: 100%;
@@ -634,6 +662,75 @@
   }
   #es-rc #es-rc-content .es-cross__desc {
     height: 5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 910px) {
+  #es-rc #es-rc-content .es-cross__name {
+    height: 3em;
+  }
+}
+#es-rc #es-rc-content .es-banner--1 {
+  width: 100vw;
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-banner--1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#es-rc #es-rc-content .es-banner--2 {
+  width: 100vw;
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-banner--2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#es-rc #es-rc-content .es-banner--3 {
+  width: 100vw;
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-banner--3 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-banner {
+    display: flex;
+    overflow: hidden;
+  }
+  #es-rc #es-rc-content .es-banner--1 {
+    width: 25%;
+  }
+  #es-rc #es-rc-content .es-banner--2 {
+    width: 50%;
+    overflow: hidden;
+  }
+  #es-rc #es-rc-content .es-banner--3 {
+    width: 25%;
+  }
+  #es-rc #es-rc-content .es-banner--1 img {
+    height: 100%;
+    transition: all 300ms ease-in-out;
+  }
+  #es-rc #es-rc-content .es-banner--1 img:hover {
+    scale: 1.1;
+  }
+  #es-rc #es-rc-content .es-banner--2 img {
+    height: 100%;
+    transition: all 300ms ease-in-out;
+  }
+  #es-rc #es-rc-content .es-banner--2 img:hover {
+    scale: 1.1;
+  }
+  #es-rc #es-rc-content .es-banner--3 img {
+    height: 100%;
+    transition: all 300ms ease-in-out;
+  }
+  #es-rc #es-rc-content .es-banner--3 img:hover {
+    scale: 1.1;
   }
 }
 #es-rc #es-rc-content .es-footer {

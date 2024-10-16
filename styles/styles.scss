@@ -17,6 +17,11 @@ $color-secondary: #B9827D;
     color: #000;
     background: #fff;
 
+    ::selection {
+        background-color: $color-main;
+        color: #FFF;
+    }
+
     * {
         box-sizing: border-box;
     }
@@ -389,6 +394,14 @@ $color-secondary: #B9827D;
             gap: 16px;
         }
 
+        .es-colors__single .es-colors__imgContainer img {
+            transition: all 200ms ease-in-out;
+        }
+
+        .es-colors__single:hover .es-colors__imgContainer img {
+            scale: 1.1;
+        }
+
         .es-colors__single--text {
             background-color: $color-secondary;
             padding-block: 16px;
@@ -412,6 +425,21 @@ $color-secondary: #B9827D;
             align-items: center;
             padding: 16px;
             max-width: 300px;
+        }
+
+        .es-before-after__img--1,
+        .es-before-after__img--2 {
+            overflow: hidden;
+        }
+
+        .es-before-after__img--1 img,
+        .es-before-after__img--2 img {
+            transition: all 200ms ease-in-out;
+        }
+
+        .es-before-after__img--1 img:hover,
+        .es-before-after__img--2 img:hover {
+            scale: 1.1;
         }
 
         .es-before-after__text {
@@ -704,8 +732,7 @@ $color-secondary: #B9827D;
         &__packshot {
             margin-bottom: 16px;
             padding-bottom: 16px;
-            width: 100%;
-            height: 250px;
+            width: 80%;
         }
 
         &__img {
@@ -790,6 +817,97 @@ $color-secondary: #B9827D;
         }
     }
 
+    @media (min-width: 768px) and (max-width: 910px) {
+        .es-cross__name {
+            height: 3em;
+        }
+    }
+
+    /**************************************/
+    /*********** banner styles ************/
+    /**************************************/
+
+    .es-banner {
+        &--1 {
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        &--1 img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        &--2 {
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        &--2 img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        &--3 {
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        &--3 img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-banner {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .es-banner--1 {
+            width: 25%;
+        }
+
+        .es-banner--2 {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .es-banner--3 {
+            width: 25%;
+        }
+
+        .es-banner--1 img {
+            height: 100%;
+            transition: all 300ms ease-in-out;
+        }
+
+        .es-banner--1 img:hover {
+            scale: 1.1;
+        }
+
+        .es-banner--2 img {
+            height: 100%;
+            transition: all 300ms ease-in-out;
+        }
+
+        .es-banner--2 img:hover {
+            scale: 1.1;
+        }
+
+        .es-banner--3 img {
+            height: 100%;
+            transition: all 300ms ease-in-out;
+        }
+
+        .es-banner--3 img:hover {
+            scale: 1.1;
+        }
+
+    }
+
+
 
     /**************************************/
     /*********** footer styles ************/
@@ -798,5 +916,6 @@ $color-secondary: #B9827D;
         background-color: #000;
         padding: 24px;
     }
+
 
 }
