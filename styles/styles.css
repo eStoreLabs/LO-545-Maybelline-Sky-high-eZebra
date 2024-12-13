@@ -50,39 +50,55 @@
   text-align: center;
   font-size: 34px;
   font-weight: 700;
+  text-wrap: balance;
 }
 #es-rc #es-rc-content .es-text-accent {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
 }
-#es-rc #es-rc-content .es-available-colors {
+#es-rc #es-rc-content .es-colors {
   text-transform: uppercase;
   padding-block: 48px;
   background-color: #E8E1E9;
 }
-#es-rc #es-rc-content .es-available-colors__header {
+#es-rc #es-rc-content .es-colors__header {
   text-align: center;
 }
-#es-rc #es-rc-content .es-available-colors .es-colors__wrapper {
+#es-rc #es-rc-content .es-colors__wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  gap: 32px 0px;
+  gap: 32px;
+  padding: 32px;
+  max-width: 800px;
+  margin: auto;
 }
-#es-rc #es-rc-content .es-available-colors .es-colors__single {
+#es-rc #es-rc-content .es-colors__single {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 185px;
+  gap: 24px;
 }
-#es-rc #es-rc-content .es-available-colors .es-colors__single .es-colors__imgContainer img {
+#es-rc #es-rc-content .es-colors__imgContainer {
+  position: relative;
+  z-index: 1;
+}
+#es-rc #es-rc-content .es-colors__maz {
+  position: absolute;
+  bottom: -30%;
+  right: -29%;
+  z-index: -1;
+  scale: 0.6;
+}
+#es-rc #es-rc-content .es-colors__single .es-colors__imgContainer .es-colors__prod {
   transition: all 200ms ease-in-out;
 }
-#es-rc #es-rc-content .es-available-colors .es-colors__single:hover .es-colors__imgContainer img {
+#es-rc #es-rc-content .es-colors__single:hover .es-colors__imgContainer .es-colors__prod {
   scale: 1.1;
 }
-#es-rc #es-rc-content .es-available-colors .es-colors__single--text {
+#es-rc #es-rc-content .es-colors__single--text {
   text-align: center;
   width: 100%;
   font-family: "Barlow Condensed", sans-serif;

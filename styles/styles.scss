@@ -43,6 +43,7 @@ $color-black: #000000;
         text-align: center;
         font-size: 34px;
         font-weight: 700;
+        text-wrap: balance;
     }
 
     .es-text-accent {
@@ -60,7 +61,7 @@ $color-black: #000000;
     /******* available colors styles ******/
     /**************************************/
 
-    .es-available-colors {
+    .es-colors {
 
         text-transform: uppercase;
         padding-block: 48px;
@@ -70,30 +71,47 @@ $color-black: #000000;
             text-align: center;
         }
 
-        .es-colors__wrapper {
+        &__wrapper {
             display: flex;
             flex-wrap: wrap;
-            align-items: flex-end;
+            align-items: center;
             justify-content: center;
-            gap: 32px 0px;
+            gap: 32px;
+            padding: 32px;
+            max-width: 800px;
+            margin: auto;
         }
 
-        .es-colors__single {
+        &__single {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 185px;
+            gap: 24px;
         }
 
-        .es-colors__single .es-colors__imgContainer img {
+        &__imgContainer {
+            position: relative;
+            z-index: 1;
+        }
+
+        &__maz {
+            position: absolute;
+            bottom: -30%;
+            right: -29%;
+            z-index: -1;
+            scale: 0.6;
+        }
+
+        &__single .es-colors__imgContainer .es-colors__prod {
             transition: all 200ms ease-in-out;
         }
 
-        .es-colors__single:hover .es-colors__imgContainer img {
+        &__single:hover .es-colors__imgContainer .es-colors__prod {
             scale: 1.1;
         }
 
-        .es-colors__single--text {
+        &__single--text {
             text-align: center;
             width: 100%;
             font-family: $secondary;
