@@ -42,6 +42,7 @@ $color-black: #000000;
         font-family: $secondary;
         text-align: center;
         font-size: 34px;
+        font-weight: 700;
     }
 
     .es-text-accent {
@@ -61,26 +62,12 @@ $color-black: #000000;
 
     .es-available-colors {
 
-        * {
-            color: #fff;
-            text-transform: uppercase;
-        }
-
-        padding-bottom: 72px;
+        text-transform: uppercase;
+        padding-block: 48px;
+        background-color: $color-secondary;
 
         &__header {
-            padding: 40px 20px 30px 20px;
             text-align: center;
-            font-size: 2rem;
-            font-weight: 700;
-            text-shadow: -1px 1px 0 $color-main, 1px 1px 0 $color-main, 1px -1px 0 $color-main, -1px -1px 0 $color-main;
-
-            strong {
-                font-family: $secondary;
-                font-size: 3rem;
-                color: $color-main;
-                text-shadow: none;
-            }
         }
 
         .es-colors__wrapper {
@@ -96,7 +83,6 @@ $color-black: #000000;
             flex-direction: column;
             align-items: center;
             width: 185px;
-            gap: 16px;
         }
 
         .es-colors__single .es-colors__imgContainer img {
@@ -108,13 +94,12 @@ $color-black: #000000;
         }
 
         .es-colors__single--text {
-            background-color: $color-secondary;
-            padding-block: 16px;
             text-align: center;
             width: 100%;
+            font-family: $secondary;
+            font-weight: 700;
+            font-size: 20px;
         }
-
-
     }
 
     /**************************************/
@@ -148,12 +133,6 @@ $color-black: #000000;
             text-align: center;
             text-transform: uppercase;
             font-weight: 700;
-        }
-
-        &__headline {
-            color: $color-black;
-            font-family: $secondary;
-            font-size: 3rem;
         }
 
         &__container {
@@ -229,10 +208,12 @@ $color-black: #000000;
             width: 100%;
         }
 
-        @media (min-width: 768px) {
-            & {
-                position: relative;
-            }
+
+    }
+
+    @media (min-width: 768px) {
+        .es-cross {
+            position: relative;
 
             &__container {
                 flex-direction: row;
@@ -250,7 +231,6 @@ $color-black: #000000;
             &__desc {
                 height: 7em;
             }
-
         }
     }
 

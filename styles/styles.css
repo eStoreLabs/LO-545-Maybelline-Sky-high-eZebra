@@ -49,30 +49,19 @@
   font-family: "Barlow Condensed", sans-serif;
   text-align: center;
   font-size: 34px;
+  font-weight: 700;
 }
 #es-rc #es-rc-content .es-text-accent {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
 }
 #es-rc #es-rc-content .es-available-colors {
-  padding-bottom: 72px;
-}
-#es-rc #es-rc-content .es-available-colors * {
-  color: #fff;
   text-transform: uppercase;
+  padding-block: 48px;
+  background-color: #E8E1E9;
 }
 #es-rc #es-rc-content .es-available-colors__header {
-  padding: 40px 20px 30px 20px;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  text-shadow: -1px 1px 0 #C0ACC7, 1px 1px 0 #C0ACC7, 1px -1px 0 #C0ACC7, -1px -1px 0 #C0ACC7;
-}
-#es-rc #es-rc-content .es-available-colors__header strong {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 3rem;
-  color: #C0ACC7;
-  text-shadow: none;
 }
 #es-rc #es-rc-content .es-available-colors .es-colors__wrapper {
   display: flex;
@@ -86,7 +75,6 @@
   flex-direction: column;
   align-items: center;
   width: 185px;
-  gap: 16px;
 }
 #es-rc #es-rc-content .es-available-colors .es-colors__single .es-colors__imgContainer img {
   transition: all 200ms ease-in-out;
@@ -95,10 +83,11 @@
   scale: 1.1;
 }
 #es-rc #es-rc-content .es-available-colors .es-colors__single--text {
-  background-color: #E8E1E9;
-  padding-block: 16px;
   text-align: center;
   width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 #es-rc #es-rc-content .es-video {
   padding: 32px;
@@ -120,11 +109,6 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-}
-#es-rc #es-rc-content .es-cross__headline {
-  color: #000000;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 3rem;
 }
 #es-rc #es-rc-content .es-cross__container {
   display: flex;
