@@ -13,6 +13,9 @@
   /************* kv styles **************/
   /**************************************/
   /**************************************/
+  /********** benefits styles ***********/
+  /**************************************/
+  /**************************************/
   /********** features styles ***********/
   /**************************************/
   /**************************************/
@@ -61,6 +64,15 @@
 #es-rc #es-rc-content .es-text-accent {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
+}
+#es-rc #es-rc-content .es-benefits__bg {
+  position: relative;
+}
+#es-rc #es-rc-content .es-benefits__packs {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 75%;
 }
 #es-rc #es-rc-content .es-features {
   background-color: #C0ACC7;

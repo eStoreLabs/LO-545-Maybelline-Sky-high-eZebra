@@ -57,6 +57,23 @@ $color-black: #000000;
     .es-kv {}
 
     /**************************************/
+    /********** benefits styles ***********/
+    /**************************************/
+
+    .es-benefits {
+        &__bg {
+            position: relative;
+        }
+
+        &__packs {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 75%;
+        }
+    }
+
+    /**************************************/
     /********** features styles ***********/
     /**************************************/
 
@@ -81,6 +98,7 @@ $color-black: #000000;
                 flex-wrap: wrap;
                 padding: 24px;
             }
+
             &__icon {
                 max-width: 50%;
             }
