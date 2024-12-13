@@ -16,6 +16,9 @@
   /******* available colors styles ******/
   /**************************************/
   /**************************************/
+  /************ video styles ************/
+  /**************************************/
+  /**************************************/
   /******* cross sell styles ************/
   /**************************************/
   /**************************************/
@@ -23,11 +26,11 @@
   /**************************************/
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #C55E71;
+  background-color: #C0ACC7;
   color: #FFF;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #C55E71;
+  background-color: #C0ACC7;
   color: #FFF;
 }
 #es-rc #es-rc-content * {
@@ -47,9 +50,6 @@
   text-align: center;
   font-size: 34px;
 }
-#es-rc #es-rc-content .es-title span {
-  font-weight: 700;
-}
 #es-rc #es-rc-content .es-text-accent {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
@@ -66,12 +66,12 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  text-shadow: -1px 1px 0 #C55E71, 1px 1px 0 #C55E71, 1px -1px 0 #C55E71, -1px -1px 0 #C55E71;
+  text-shadow: -1px 1px 0 #C0ACC7, 1px 1px 0 #C0ACC7, 1px -1px 0 #C0ACC7, -1px -1px 0 #C0ACC7;
 }
 #es-rc #es-rc-content .es-available-colors__header strong {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 3rem;
-  color: #C55E71;
+  color: #C0ACC7;
   text-shadow: none;
 }
 #es-rc #es-rc-content .es-available-colors .es-colors__wrapper {
@@ -100,8 +100,20 @@
   text-align: center;
   width: 100%;
 }
+#es-rc #es-rc-content .es-video {
+  padding: 32px;
+  background-color: #C0ACC7;
+}
+#es-rc #es-rc-content .es-video__video {
+  max-width: 100%;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-video {
+    padding: 64px;
+  }
+}
 #es-rc #es-rc-content .es-cross {
-  padding: 40px 16px;
+  padding: 60px 16px;
   background-color: #E8E1E9;
 }
 #es-rc #es-rc-content .es-cross__header {
@@ -164,7 +176,7 @@
   margin: 0;
   line-height: inherit;
   font-size: 20px;
-  background: #000;
+  background: #000000;
   color: #FFF;
   text-decoration: none;
   padding: 16px 40px;
@@ -174,6 +186,7 @@
   text-align: center;
   display: inline-block;
   transition: color 0.3s;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-cross {
@@ -186,12 +199,6 @@
     gap: 32px 8px;
     margin-top: 32px;
   }
-  #es-rc #es-rc-content .es-cross .es-text-stroke {
-    margin-right: 32px;
-  }
-  #es-rc #es-rc-content .es-cross .es-title {
-    margin-left: 32px;
-  }
   #es-rc #es-rc-content .es-cross__single {
     min-width: 230px;
     width: 30%;
@@ -201,6 +208,6 @@
   }
 }
 #es-rc #es-rc-content .es-footer {
-  background-color: #000;
+  background-color: #000000;
   padding: 24px;
 }/*# sourceMappingURL=styles.css.map */

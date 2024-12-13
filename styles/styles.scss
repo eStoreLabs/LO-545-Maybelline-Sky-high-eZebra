@@ -2,7 +2,7 @@
 
 $regular: 'Montserrat', sans-serif;
 $secondary: 'Barlow Condensed', sans-serif;
-$color-main: #C55E71;
+$color-main: #C0ACC7;
 $color-secondary: #E8E1E9;
 $color-black: #000000;
 
@@ -42,10 +42,6 @@ $color-black: #000000;
         font-family: $secondary;
         text-align: center;
         font-size: 34px;
-    }
-
-    .es-title span {
-        font-weight: 700;
     }
 
     .es-text-accent {
@@ -121,14 +117,31 @@ $color-black: #000000;
 
     }
 
+    /**************************************/
+    /************ video styles ************/
+    /**************************************/
+
+    .es-video {
+        padding: 32px;
+        background-color: $color-main;
+
+        &__video {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-video {
+            padding: 64px;
+        }
+    }
 
     /**************************************/
     /******* cross sell styles ************/
     /**************************************/
 
     .es-cross {
-        // color: #FFF;
-        padding: 40px 16px;
+        padding: 60px 16px;
         background-color: $color-secondary;
 
         &__header {
@@ -142,7 +155,6 @@ $color-black: #000000;
             font-family: $secondary;
             font-size: 3rem;
         }
-
 
         &__container {
             display: flex;
@@ -204,7 +216,7 @@ $color-black: #000000;
             margin: 0;
             line-height: inherit;
             font-size: 20px;
-            background: #000;
+            background: $color-black;
             color: #FFF;
             text-decoration: none;
             padding: 16px 40px;
@@ -214,6 +226,7 @@ $color-black: #000000;
             text-align: center;
             display: inline-block;
             transition: color 0.3s;
+            width: 100%;
         }
 
         @media (min-width: 768px) {
@@ -227,14 +240,6 @@ $color-black: #000000;
                 align-items: flex-end;
                 gap: 32px 8px;
                 margin-top: 32px;
-            }
-
-            .es-text-stroke {
-                margin-right: 32px;
-            }
-
-            .es-title {
-                margin-left: 32px;
             }
 
             &__single {
@@ -254,7 +259,7 @@ $color-black: #000000;
     /*********** footer styles ************/
     /**************************************/
     .es-footer {
-        background-color: #000;
+        background-color: $color-black;
         padding: 24px;
     }
 }
