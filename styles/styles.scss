@@ -57,6 +57,48 @@ $color-black: #000000;
     .es-kv {}
 
     /**************************************/
+    /********** features styles ***********/
+    /**************************************/
+
+    .es-features {
+        background-color: $color-main;
+
+        &__icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__icon {
+            max-width: 200px;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .es-features {
+            &__icons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 24px;
+            }
+            &__icon {
+                max-width: 50%;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-features {
+            display: flex;
+
+            &__img,
+            &__icons {
+                flex-basis: 50%;
+            }
+        }
+    }
+
+    /**************************************/
     /************ tech styles *************/
     /**************************************/
 

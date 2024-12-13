@@ -13,6 +13,9 @@
   /************* kv styles **************/
   /**************************************/
   /**************************************/
+  /********** features styles ***********/
+  /**************************************/
+  /**************************************/
   /************ tech styles *************/
   /**************************************/
   /**************************************/
@@ -58,6 +61,35 @@
 #es-rc #es-rc-content .es-text-accent {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
+}
+#es-rc #es-rc-content .es-features {
+  background-color: #C0ACC7;
+}
+#es-rc #es-rc-content .es-features__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#es-rc #es-rc-content .es-features__icon {
+  max-width: 200px;
+}
+@media (min-width: 500px) {
+  #es-rc #es-rc-content .es-features__icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px;
+  }
+  #es-rc #es-rc-content .es-features__icon {
+    max-width: 50%;
+  }
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-features {
+    display: flex;
+  }
+  #es-rc #es-rc-content .es-features__img, #es-rc #es-rc-content .es-features__icons {
+    flex-basis: 50%;
+  }
 }
 #es-rc #es-rc-content .es-tech {
   background-color: #E8E1E9;
