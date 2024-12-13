@@ -3,7 +3,8 @@
 $regular: 'Montserrat', sans-serif;
 $secondary: 'Barlow Condensed', sans-serif;
 $color-main: #C55E71;
-$color-secondary: #B9827D;
+$color-secondary: #E8E1E9;
+$color-black: #000000;
 
 #es-rc #es-rc-content {
     font-family: 'Montserrat', sans-serif;
@@ -45,11 +46,6 @@ $color-secondary: #B9827D;
 
     .es-title span {
         font-weight: 700;
-    }
-
-    .es-gradient-background {
-        background: rgb(231, 185, 179);
-        background: linear-gradient(117deg, rgba(231, 185, 179, 1) 0%, rgba(243, 212, 210, 1) 100%);
     }
 
     .es-text-accent {
@@ -131,8 +127,9 @@ $color-secondary: #B9827D;
     /**************************************/
 
     .es-cross {
-        color: #FFF;
+        // color: #FFF;
         padding: 40px 16px;
+        background-color: $color-secondary;
 
         &__header {
             text-align: center;
@@ -141,15 +138,11 @@ $color-secondary: #B9827D;
         }
 
         &__headline {
-            color: $color-main;
+            color: $color-black;
             font-family: $secondary;
             font-size: 3rem;
         }
 
-        &__subheadline {
-            font-size: 2rem;
-            text-shadow: -1px 1px 0 $color-main, 1px 1px 0 $color-main, 1px -1px 0 $color-main, -1px -1px 0 $color-main;
-        }
 
         &__container {
             display: flex;
@@ -165,7 +158,7 @@ $color-secondary: #B9827D;
             display: flex;
             align-items: center;
             flex-flow: column;
-            color: $color-main;
+            color: $color-black;
         }
 
         &__single:hover {
@@ -198,7 +191,7 @@ $color-secondary: #B9827D;
             font-family: $secondary;
             text-align: center;
             margin-bottom: 8px;
-            font-weight: 700;
+            font-weight: 400;
         }
 
         &__desc {
@@ -223,14 +216,6 @@ $color-secondary: #B9827D;
             transition: color 0.3s;
         }
 
-        .es-disclaimer {
-            text-align: center;
-            text-wrap: balance;
-            margin-top: 50px;
-            font-size: 14px;
-            color: $color-main;
-        }
-
         @media (min-width: 768px) {
             & {
                 position: relative;
@@ -242,10 +227,6 @@ $color-secondary: #B9827D;
                 align-items: flex-end;
                 gap: 32px 8px;
                 margin-top: 32px;
-            }
-
-            .es-disclaimer {
-                font-size: 12px;
             }
 
             .es-text-stroke {
@@ -262,15 +243,9 @@ $color-secondary: #B9827D;
             }
 
             &__desc {
-                height: 5em;
+                height: 7em;
             }
 
-        }
-    }
-
-    @media (min-width: 768px) and (max-width: 910px) {
-        .es-cross__name {
-            height: 3em;
         }
     }
 
