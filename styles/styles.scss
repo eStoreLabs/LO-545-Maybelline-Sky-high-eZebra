@@ -56,9 +56,89 @@ $color-black: #000000;
     /**************************************/
     .es-kv {}
 
+    /**************************************/
+    /************ tech styles *************/
+    /**************************************/
+
+    .es-tech {
+        background-color: $color-secondary;
+
+        &__bg-mobile img {
+            width: 100%;
+        }
+
+        &__bg-desktop {
+            display: none;
+        }
+
+        &__left,
+        &__right {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 16px;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-tech {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 130px;
+            aspect-ratio: 1310 / 586;
+
+            &__bg-mobile {
+                display: none;
+            }
+
+            &__bg-desktop {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                height: 100%;
+                width: 100%;
+            }
+
+            &__bg-desktop img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+
+            &__left,
+            &__right,
+            .es-title {
+                text-align: left;
+            }
+
+            &__left,
+            &__right {
+                flex-basis: 40%;
+            }
+        }
+    }
+
+    @media (min-width: 620px) {
+        .es-tech {
+            padding-inline: 24px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .es-tech {
+            padding-inline: 32px;
+        }
+    }
 
     /**************************************/
-    /******* available colors styles ******/
+    /********** colors styles *************/
     /**************************************/
 
     .es-colors {
