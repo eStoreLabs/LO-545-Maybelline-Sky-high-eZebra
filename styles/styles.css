@@ -35,11 +35,11 @@
   /**************************************/
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #C0ACC7;
+  background-color: #C28860;
   color: #FFF;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #C0ACC7;
+  background-color: #C28860;
   color: #FFF;
 }
 #es-rc #es-rc-content * {
@@ -172,6 +172,10 @@
   align-items: center;
   color: #FFFFFF;
   gap: 8px;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-benefits__single:hover {
+  margin-left: 20px;
 }
 #es-rc #es-rc-content .es-benefits__single img {
   margin: unset;
@@ -185,6 +189,10 @@
   left: 0;
   bottom: 0;
   width: 75%;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-benefits__packs:hover {
+  scale: 1.1;
 }
 @media (min-width: 500px) {
   #es-rc #es-rc-content .es-benefits__photo {
@@ -235,6 +243,19 @@
 }
 #es-rc #es-rc-content .es-features__icon {
   max-width: 200px;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-features__icon:hover {
+  scale: 1.1;
+}
+#es-rc #es-rc-content .es-features__img {
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-features__img img {
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-features__img img:hover {
+  scale: 1.2;
 }
 @media (min-width: 500px) {
   #es-rc #es-rc-content .es-features__icons {
