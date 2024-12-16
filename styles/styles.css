@@ -65,6 +65,83 @@
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
 }
+#es-rc #es-rc-content .es-kv {
+  background-color: #C0ACC7;
+  color: #FFFFFF;
+}
+#es-rc #es-rc-content .es-kv__headline {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  padding-block: 16px;
+}
+#es-rc #es-rc-content .es-kv__headline--top {
+  font-weight: 600;
+  font-size: 50px;
+}
+#es-rc #es-rc-content .es-kv__headline--bottom {
+  font-weight: 400;
+  font-size: 70px;
+}
+@media (min-width: 500px) {
+  #es-rc #es-rc-content .es-kv {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-kv__headline {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    padding-inline: 32px;
+    text-align: right;
+  }
+  #es-rc #es-rc-content .es-kv__headline--top {
+    font-size: 40px;
+  }
+  #es-rc #es-rc-content .es-kv__headline--bottom {
+    font-size: 52px;
+  }
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-kv__headline {
+    bottom: 19%;
+    left: 30%;
+    right: unset;
+    top: unset;
+    padding: 0;
+    line-height: 0.8;
+  }
+  #es-rc #es-rc-content .es-kv__packshot {
+    position: absolute;
+    transform: translate(0%, -50%);
+    right: 6%;
+    top: 47%;
+    width: 24%;
+  }
+  #es-rc #es-rc-content .es-kv__packshot img {
+    margin: unset;
+  }
+}
+@media (min-width: 645px) {
+  #es-rc #es-rc-content .es-kv__headline {
+    left: 35%;
+  }
+}
+@media (min-width: 780px) {
+  #es-rc #es-rc-content .es-kv__headline {
+    left: 36%;
+  }
+  #es-rc #es-rc-content .es-kv__headline--top {
+    font-size: 46px;
+  }
+  #es-rc #es-rc-content .es-kv__headline--bottom {
+    font-size: 60px;
+  }
+}
+@media (min-width: 880px) {
+  #es-rc #es-rc-content .es-kv__headline {
+    left: 40%;
+  }
+}
 #es-rc #es-rc-content .es-benefits__wrapper {
   background-color: #C0ACC7;
   padding: 16px;
@@ -73,6 +150,7 @@
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 32px;
+  line-height: 0.9;
 }
 #es-rc #es-rc-content .es-benefits__headline--top {
   font-family: "Barlow Condensed", sans-serif;

@@ -54,7 +54,102 @@ $color-black: #000000;
     /**************************************/
     /************* kv styles **************/
     /**************************************/
-    .es-kv {}
+    .es-kv {
+        background-color: $color-main;
+        color: #FFFFFF;
+
+        &__headline {
+            text-transform: uppercase;
+            font-family: $secondary;
+            text-align: center;
+            padding-block: 16px;
+        }
+
+        &__headline--top {
+            font-weight: 600;
+            font-size: 50px;
+        }
+
+        &__headline--bottom {
+            font-weight: 400;
+            font-size: 70px;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .es-kv {
+            position: relative;
+
+            &__headline {
+                position: absolute;
+                top: 3%;
+                right: 0;
+                padding-inline: 32px;
+                text-align: right;
+            }
+
+            &__headline--top {
+                font-size: 40px;
+            }
+
+            &__headline--bottom {
+                font-size: 52px;
+            }
+        }
+
+    }
+
+    @media (min-width: 576px) {
+        .es-kv {
+            &__headline {
+                bottom: 19%;
+                left: 30%;
+                right: unset;
+                top: unset;
+                padding: 0;
+                line-height: 0.8;
+            }
+
+            &__packshot {
+                position: absolute;
+                transform: translate(0%, -50%);
+                right: 6%;
+                top: 47%;
+                width: 24%;
+
+                img {
+                    margin: unset;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 645px) {
+        .es-kv__headline {
+            left: 35%;
+        }
+    }
+
+
+    @media(min-width: 780px) {
+        .es-kv__headline {
+            left: 36%;
+        }
+
+        .es-kv__headline--top {
+            font-size: 46px;
+        }
+
+        .es-kv__headline--bottom {
+            font-size: 60px;
+        }
+    }
+
+    @media (min-width: 880px) {
+        .es-kv__headline {
+            left: 40%;
+        }
+    }
 
     /**************************************/
     /********** benefits styles ***********/
@@ -70,6 +165,7 @@ $color-black: #000000;
             color: #FFFFFF;
             text-transform: uppercase;
             margin-bottom: 32px;
+            line-height: 0.9;
         }
 
         &__headline--top {
@@ -157,8 +253,10 @@ $color-black: #000000;
                 top: 20%;
                 left: 10%;
             }
+
             &__single {
                 font-size: 20px;
+
                 img {
                     width: 20px;
                 }
