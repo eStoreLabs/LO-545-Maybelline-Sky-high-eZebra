@@ -61,6 +61,47 @@ $color-black: #000000;
     /**************************************/
 
     .es-benefits {
+        &__wrapper {
+            background-color: $color-main;
+            padding: 16px;
+        }
+
+        &__headline {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        &__headline--top {
+            font-family: $secondary;
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        &__headline--bottom {
+            font-family: $secondary;
+            font-weight: 400;
+            font-size: 60px;
+        }
+
+        &__flexwrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &__single {
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            gap: 8px;
+
+            img {
+                margin: unset;
+                width: 16px;
+            }
+        }
+
         &__bg {
             position: relative;
         }
@@ -70,6 +111,58 @@ $color-black: #000000;
             left: 0;
             bottom: 0;
             width: 75%;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .es-benefits {
+            &__photo {
+                position: relative;
+            }
+
+            &__wrapper {
+                position: absolute;
+                background-color: transparent;
+                top: 18%;
+                left: 8%;
+                width: 64%;
+                padding: 0;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-benefits {
+            &__headline--top {
+                font-size: 38px;
+            }
+
+            &__headline--bottom {
+                font-size: 70px;
+            }
+
+            &__flexwrapper {
+                max-width: 60%;
+            }
+
+            &__single {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (min-width: 900px) {
+        .es-benefits {
+            &__wrapper {
+                top: 20%;
+                left: 10%;
+            }
+            &__single {
+                font-size: 20px;
+                img {
+                    width: 20px;
+                }
+            }
         }
     }
 

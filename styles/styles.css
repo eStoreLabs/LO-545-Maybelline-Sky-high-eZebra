@@ -65,6 +65,40 @@
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
 }
+#es-rc #es-rc-content .es-benefits__wrapper {
+  background-color: #C0ACC7;
+  padding: 16px;
+}
+#es-rc #es-rc-content .es-benefits__headline {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+#es-rc #es-rc-content .es-benefits__headline--top {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+#es-rc #es-rc-content .es-benefits__headline--bottom {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+#es-rc #es-rc-content .es-benefits__flexwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#es-rc #es-rc-content .es-benefits__single {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 8px;
+}
+#es-rc #es-rc-content .es-benefits__single img {
+  margin: unset;
+  width: 16px;
+}
 #es-rc #es-rc-content .es-benefits__bg {
   position: relative;
 }
@@ -73,6 +107,45 @@
   left: 0;
   bottom: 0;
   width: 75%;
+}
+@media (min-width: 500px) {
+  #es-rc #es-rc-content .es-benefits__photo {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-benefits__wrapper {
+    position: absolute;
+    background-color: transparent;
+    top: 18%;
+    left: 8%;
+    width: 64%;
+    padding: 0;
+  }
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-benefits__headline--top {
+    font-size: 38px;
+  }
+  #es-rc #es-rc-content .es-benefits__headline--bottom {
+    font-size: 70px;
+  }
+  #es-rc #es-rc-content .es-benefits__flexwrapper {
+    max-width: 60%;
+  }
+  #es-rc #es-rc-content .es-benefits__single {
+    font-size: 18px;
+  }
+}
+@media (min-width: 900px) {
+  #es-rc #es-rc-content .es-benefits__wrapper {
+    top: 20%;
+    left: 10%;
+  }
+  #es-rc #es-rc-content .es-benefits__single {
+    font-size: 20px;
+  }
+  #es-rc #es-rc-content .es-benefits__single img {
+    width: 20px;
+  }
 }
 #es-rc #es-rc-content .es-features {
   background-color: #C0ACC7;
