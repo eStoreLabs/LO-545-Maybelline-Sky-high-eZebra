@@ -13,21 +13,6 @@
   /************* kv styles **************/
   /**************************************/
   /**************************************/
-  /********** benefits styles ***********/
-  /**************************************/
-  /**************************************/
-  /********** features styles ***********/
-  /**************************************/
-  /**************************************/
-  /************ tech styles *************/
-  /**************************************/
-  /**************************************/
-  /********** colors styles *************/
-  /**************************************/
-  /**************************************/
-  /************ video styles ************/
-  /**************************************/
-  /**************************************/
   /******* cross sell styles ************/
   /**************************************/
   /**************************************/
@@ -35,12 +20,16 @@
   /**************************************/
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #C28860;
-  color: #FFF;
+  background-color: #745591;
+  color: #FFFFFF;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #FFFFFF;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #C28860;
-  color: #FFF;
+  background-color: #745591;
+  color: #FFFFFF;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #FFFFFF;
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -60,348 +49,18 @@
   font-size: 34px;
   font-weight: 700;
   text-wrap: balance;
+  background: linear-gradient(180deg, rgb(209, 170, 174) 0%, rgb(241, 226, 226) 50%, rgb(209, 170, 174) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #es-rc #es-rc-content .es-text-accent {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
 }
-#es-rc #es-rc-content .es-kv {
-  background-color: #C0ACC7;
-  color: #FFFFFF;
-}
-#es-rc #es-rc-content .es-kv__headline {
-  text-transform: uppercase;
-  font-family: "Barlow Condensed", sans-serif;
-  text-align: center;
-  padding-block: 16px;
-}
-#es-rc #es-rc-content .es-kv__headline--top {
-  font-weight: 600;
-  font-size: 50px;
-}
-#es-rc #es-rc-content .es-kv__headline--bottom {
-  font-weight: 400;
-  font-size: 70px;
-}
-@media (min-width: 500px) {
-  #es-rc #es-rc-content .es-kv {
-    position: relative;
-  }
-  #es-rc #es-rc-content .es-kv__headline {
-    position: absolute;
-    top: 3%;
-    right: 0;
-    padding-inline: 32px;
-    text-align: right;
-  }
-  #es-rc #es-rc-content .es-kv__headline--top {
-    font-size: 40px;
-  }
-  #es-rc #es-rc-content .es-kv__headline--bottom {
-    font-size: 52px;
-  }
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-kv__headline {
-    bottom: 19%;
-    left: 30%;
-    right: unset;
-    top: unset;
-    padding: 0;
-    line-height: 0.8;
-  }
-  #es-rc #es-rc-content .es-kv__packshot {
-    position: absolute;
-    transform: translate(0%, -50%);
-    right: 6%;
-    top: 47%;
-    width: 24%;
-  }
-  #es-rc #es-rc-content .es-kv__packshot img {
-    margin: unset;
-  }
-}
-@media (min-width: 645px) {
-  #es-rc #es-rc-content .es-kv__headline {
-    left: 35%;
-  }
-}
-@media (min-width: 780px) {
-  #es-rc #es-rc-content .es-kv__headline {
-    left: 36%;
-  }
-  #es-rc #es-rc-content .es-kv__headline--top {
-    font-size: 46px;
-  }
-  #es-rc #es-rc-content .es-kv__headline--bottom {
-    font-size: 60px;
-  }
-}
-@media (min-width: 880px) {
-  #es-rc #es-rc-content .es-kv__headline {
-    left: 40%;
-  }
-}
-#es-rc #es-rc-content .es-benefits__wrapper {
-  background-color: #C0ACC7;
-  padding: 16px;
-}
-#es-rc #es-rc-content .es-benefits__headline {
-  color: #FFFFFF;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-  line-height: 0.9;
-}
-#es-rc #es-rc-content .es-benefits__headline--top {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-}
-#es-rc #es-rc-content .es-benefits__headline--bottom {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-}
-#es-rc #es-rc-content .es-benefits__flexwrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-#es-rc #es-rc-content .es-benefits__single {
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-  gap: 8px;
-  transition: all 200ms ease-in-out;
-}
-#es-rc #es-rc-content .es-benefits__single:hover {
-  margin-left: 20px;
-}
-#es-rc #es-rc-content .es-benefits__single img {
-  margin: unset;
-  width: 16px;
-}
-#es-rc #es-rc-content .es-benefits__bg {
-  position: relative;
-}
-#es-rc #es-rc-content .es-benefits__packs {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 75%;
-  transition: all 200ms ease-in-out;
-}
-#es-rc #es-rc-content .es-benefits__packs:hover {
-  scale: 1.1;
-}
-@media (min-width: 500px) {
-  #es-rc #es-rc-content .es-benefits__photo {
-    position: relative;
-  }
-  #es-rc #es-rc-content .es-benefits__wrapper {
-    position: absolute;
-    background-color: transparent;
-    top: 18%;
-    left: 8%;
-    width: 64%;
-    padding: 0;
-  }
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-benefits__headline--top {
-    font-size: 38px;
-  }
-  #es-rc #es-rc-content .es-benefits__headline--bottom {
-    font-size: 70px;
-  }
-  #es-rc #es-rc-content .es-benefits__flexwrapper {
-    max-width: 60%;
-  }
-  #es-rc #es-rc-content .es-benefits__single {
-    font-size: 18px;
-  }
-}
-@media (min-width: 900px) {
-  #es-rc #es-rc-content .es-benefits__wrapper {
-    top: 20%;
-    left: 10%;
-  }
-  #es-rc #es-rc-content .es-benefits__single {
-    font-size: 20px;
-  }
-  #es-rc #es-rc-content .es-benefits__single img {
-    width: 20px;
-  }
-}
-#es-rc #es-rc-content .es-features {
-  background-color: #C0ACC7;
-}
-#es-rc #es-rc-content .es-features__icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#es-rc #es-rc-content .es-features__icon {
-  max-width: 200px;
-  transition: all 200ms ease-in-out;
-}
-#es-rc #es-rc-content .es-features__icon:hover {
-  scale: 1.1;
-}
-#es-rc #es-rc-content .es-features__img {
-  overflow: hidden;
-}
-#es-rc #es-rc-content .es-features__img img {
-  transition: all 200ms ease-in-out;
-}
-#es-rc #es-rc-content .es-features__img img:hover {
-  scale: 1.2;
-}
-@media (min-width: 500px) {
-  #es-rc #es-rc-content .es-features__icons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 24px;
-  }
-  #es-rc #es-rc-content .es-features__icon {
-    max-width: 50%;
-  }
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-features {
-    display: flex;
-  }
-  #es-rc #es-rc-content .es-features__img, #es-rc #es-rc-content .es-features__icons {
-    flex-basis: 50%;
-  }
-}
-#es-rc #es-rc-content .es-tech {
-  background-color: #E8E1E9;
-}
-#es-rc #es-rc-content .es-tech__bg-mobile img {
-  width: 100%;
-}
-#es-rc #es-rc-content .es-tech__bg-desktop {
-  display: none;
-}
-#es-rc #es-rc-content .es-tech__left, #es-rc #es-rc-content .es-tech__right {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px;
-  text-align: center;
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-tech {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 130px;
-    aspect-ratio: 1310/586;
-  }
-  #es-rc #es-rc-content .es-tech__bg-mobile {
-    display: none;
-  }
-  #es-rc #es-rc-content .es-tech__bg-desktop {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-  }
-  #es-rc #es-rc-content .es-tech__bg-desktop img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-  #es-rc #es-rc-content .es-tech__left, #es-rc #es-rc-content .es-tech__right,
-  #es-rc #es-rc-content .es-tech .es-title {
-    text-align: left;
-  }
-  #es-rc #es-rc-content .es-tech__left, #es-rc #es-rc-content .es-tech__right {
-    flex-basis: 40%;
-  }
-}
-@media (min-width: 620px) {
-  #es-rc #es-rc-content .es-tech {
-    padding-inline: 24px;
-  }
-}
-@media (min-width: 800px) {
-  #es-rc #es-rc-content .es-tech {
-    padding-inline: 32px;
-  }
-}
-#es-rc #es-rc-content .es-colors {
-  text-transform: uppercase;
-  padding-block: 48px;
-  background-color: #E8E1E9;
-}
-#es-rc #es-rc-content .es-colors__header {
-  text-align: center;
-}
-#es-rc #es-rc-content .es-colors__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  padding: 32px;
-  max-width: 800px;
-  margin: auto;
-}
-#es-rc #es-rc-content .es-colors__single {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 185px;
-  gap: 24px;
-}
-#es-rc #es-rc-content .es-colors__imgContainer {
-  position: relative;
-  z-index: 1;
-}
-#es-rc #es-rc-content .es-colors__maz {
-  position: absolute;
-  bottom: -30%;
-  right: -29%;
-  z-index: -1;
-  scale: 0.6;
-}
-#es-rc #es-rc-content .es-colors__single .es-colors__imgContainer .es-colors__prod {
-  transition: all 200ms ease-in-out;
-}
-#es-rc #es-rc-content .es-colors__single:hover .es-colors__imgContainer .es-colors__prod {
-  scale: 1.1;
-}
-#es-rc #es-rc-content .es-colors__single--text {
-  text-align: center;
-  width: 100%;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-}
-#es-rc #es-rc-content .es-video {
-  padding: 32px;
-  background-color: #C0ACC7;
-}
-#es-rc #es-rc-content .es-video__video {
-  max-width: 100%;
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-video {
-    padding: 64px;
-  }
-}
 #es-rc #es-rc-content .es-cross {
   padding: 60px 16px;
-  background-color: #E8E1E9;
+  background: linear-gradient(180deg, rgb(6, 7, 12) 0%, rgb(72, 41, 96) 100%);
+  color: #FFFFFF;
 }
 #es-rc #es-rc-content .es-cross__header {
   text-align: center;
@@ -421,15 +80,18 @@
   display: flex;
   align-items: center;
   flex-flow: column;
-  color: #000000;
+}
+#es-rc #es-rc-content .es-cross__single a {
+  display: flex;
+  justify-content: center;
 }
 #es-rc #es-rc-content .es-cross__single:hover .es-cross__img {
   transform: scale(1.05);
 }
 #es-rc #es-rc-content .es-cross__single:hover .es-cross__link {
-  background-color: #FFF;
-  color: #000;
-  box-shadow: inset 0 0 0 2px #000;
+  background-color: #000000;
+  color: #D1AAAE;
+  box-shadow: inset 0 0 0 2px #D1AAAE;
 }
 #es-rc #es-rc-content .es-cross__packshot {
   margin-bottom: 16px;
@@ -458,7 +120,7 @@
   margin: 0;
   line-height: inherit;
   font-size: 20px;
-  background: #000000;
+  background: #D1AAAE;
   color: #FFF;
   text-decoration: none;
   padding: 16px 40px;
