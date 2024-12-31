@@ -233,10 +233,20 @@ body {
             font-weight: 500;
             font-size: 24px;
             line-height: 1;
+            z-index: 1;
+        }
+
+        &__BA--img {
+            overflow: hidden;
         }
 
         &__BA--img img {
             width: 100%;
+            transition: all 200ms ease-in-out;
+        }
+
+        &__BA--img img:hover {
+            scale: 1.1;
         }
     }
 
@@ -253,12 +263,32 @@ body {
             .swiper-slide {
                 padding: 16px 0 0 16px;
             }
+
             &__slide1Ctn {
                 display: flex;
                 flex-direction: row;
             }
+
+            &__slide1--left {
+                width: 66%;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                padding-block: 32px;
+            }
+
             &__slide1bg {
                 display: block;
+                position: absolute;
+                z-index: 1;
+                bottom: 0;
+                right: 0;
+                max-width: 50%;
+            }
+
+            &__slide1BA {
+                padding-left: 32px;
+                padding-right: 0;
             }
         }
     }
