@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #es-rc #es-rc-content {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -56,6 +60,75 @@
 #es-rc #es-rc-content .es-text-accent {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
+}
+#es-rc #es-rc-content .es-kv__left {
+  position: relative;
+}
+#es-rc #es-rc-content .es-kv__bg {
+  width: 200%;
+}
+#es-rc #es-rc-content .es-kv__headline {
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+  bottom: 5%;
+  left: 50%;
+  color: #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.9;
+  width: -moz-max-content;
+  width: max-content;
+}
+#es-rc #es-rc-content .es-kv__headline--top {
+  font-weight: 500;
+  font-size: 46px;
+}
+#es-rc #es-rc-content .es-kv__headline--bottom {
+  font-weight: 600;
+  font-size: 72px;
+}
+#es-rc #es-rc-content .es-kv__packshot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#es-rc #es-rc-content .es-kv__packshot--bg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#es-rc #es-rc-content .es-kv__packshot--packCtn {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+#es-rc #es-rc-content .es-kv__packshot--logo {
+  width: 100%;
+  max-width: 300px;
+}
+#es-rc #es-rc-content .es-kv__packshot--pack {
+  height: 75%;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-kv {
+    display: flex;
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-kv__left {
+    width: 55%;
+  }
+  #es-rc #es-rc-content .es-kv__packshot {
+    width: 40%;
+    margin: 16px;
+  }
 }
 #es-rc #es-rc-content .es-cross {
   padding: 60px 16px;
