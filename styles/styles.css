@@ -23,6 +23,9 @@ body {
   /******** brush img styles ************/
   /**************************************/
   /**************************************/
+  /*********** colors styles ************/
+  /**************************************/
+  /**************************************/
   /******* cross sell styles ************/
   /**************************************/
   /**************************************/
@@ -327,6 +330,91 @@ body {
   }
   #es-rc #es-rc-content .es-brush__bottom {
     bottom: 10%;
+  }
+}
+#es-rc #es-rc-content .es-colors {
+  background: linear-gradient(180deg, rgb(72, 41, 96) 0%, rgb(3, 6, 10) 100%);
+  padding: 16px;
+}
+#es-rc #es-rc-content .es-colors__img {
+  margin-bottom: 32px;
+}
+#es-rc #es-rc-content .es-colors .es-color {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#es-rc #es-rc-content .es-colors .es-color__name {
+  color: #FFF1F1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+#es-rc #es-rc-content .es-colors .es-color__BA {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#es-rc #es-rc-content .es-colors .es-color__BA img {
+  width: 100%;
+}
+#es-rc #es-rc-content .es-colors .es-color__after, #es-rc #es-rc-content .es-colors .es-color__before {
+  position: relative;
+}
+#es-rc #es-rc-content .es-colors .es-color__BA--text {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+#es-rc #es-rc-content .es-colors .swiper2 {
+  padding-inline: 16px;
+  padding-block: 32px;
+}
+#es-rc #es-rc-content .es-colors .es-color--1 {
+  background-color: #191813;
+}
+#es-rc #es-rc-content .es-colors .es-color--2 {
+  background-color: #090A08;
+}
+#es-rc #es-rc-content .es-colors .es-color--3 {
+  background-color: #2A1E1C;
+}
+#es-rc #es-rc-content .es-colors .es-color--4 .es-color__name {
+  color: #020202;
+}
+#es-rc #es-rc-content .es-colors .es-color--5 {
+  background-color: #122011;
+}
+#es-rc #es-rc-content .es-colors .es-color--6 {
+  background-color: #2C0021;
+}
+#es-rc #es-rc-content .es-colors .es-color--7 {
+  background-color: #2B2BB5;
+}
+#es-rc #es-rc-content .es-colors .es-color--8 {
+  background-color: #C1548C;
+}
+#es-rc #es-rc-content .es-colors .es-color--9 {
+  background-color: #641A42;
+}
+@media (min-width: 364px) {
+  #es-rc #es-rc-content .es-colors__img {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-colors .es-title {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 2%;
+    width: 50%;
+  }
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-color__name {
+    height: 60px;
+    vertical-align: middle;
   }
 }
 #es-rc #es-rc-content .es-cross {

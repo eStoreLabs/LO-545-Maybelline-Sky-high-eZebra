@@ -9,6 +9,7 @@ $color-black: #000000;
 $color-white: #FFFFFF;
 
 $gradient: linear-gradient(180deg, rgba(6, 7, 12, 1) 0%, rgba(72, 41, 96, 1) 100%);
+$gradient2: linear-gradient(180deg, rgba(72, 41, 96, 1) 0%, rgba(3, 6, 10, 1) 100%);
 $text-gradient: linear-gradient(180deg, rgba(209, 170, 174, 1) 0%, rgba(241, 226, 226, 1) 50%, rgba(209, 170, 174, 1) 100%);
 
 body {
@@ -407,6 +408,120 @@ body {
         }
     }
 
+    /**************************************/
+    /*********** colors styles ************/
+    /**************************************/
+
+    .es-colors {
+        background: $gradient2;
+        padding: 16px;
+
+        &__img {
+            margin-bottom: 32px;
+        }
+
+        .es-color {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &__name {
+                color: #FFF1F1;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+
+            &__BA {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            &__BA img {
+                width: 100%;
+            }
+
+            &__after,
+            &__before {
+                position: relative;
+            }
+
+            &__BA--text {
+                position: absolute;
+                bottom: 8px;
+                left: 8px;
+            }
+        }
+
+        .swiper2 {
+            padding-inline: 16px;
+            padding-block: 32px;
+        }
+
+        .es-color--1 {
+            background-color: #191813;
+        }
+
+        .es-color--2 {
+            background-color: #090A08;
+        }
+
+        .es-color--3 {
+            background-color: #2A1E1C;
+        }
+
+        .es-color--4 .es-color__name {
+            color: #020202;
+        }
+
+        .es-color--5 {
+            background-color: #122011;
+        }
+
+        .es-color--6 {
+            background-color: #2C0021;
+        }
+
+        .es-color--7 {
+            background-color: #2B2BB5;
+        }
+
+        .es-color--8 {
+            background-color: #C1548C;
+        }
+
+        .es-color--9 {
+            background-color: #641A42;
+        }
+    }
+
+    @media (min-width: 364px) {
+        .es-colors {
+
+            &__img {
+                position: relative;
+            }
+
+            .es-title {
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 2%;
+                width: 50%;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+
+        .es-color__name {
+            height: 60px;
+            vertical-align: middle;
+        }
+    }
 
     /**************************************/
     /******* cross sell styles ************/
