@@ -408,6 +408,9 @@ body {
   background-color: #641A42;
 }
 @media (min-width: 364px) {
+  #es-rc #es-rc-content .es-colors {
+    padding: 24px;
+  }
   #es-rc #es-rc-content .es-colors__img {
     position: relative;
   }
@@ -420,9 +423,23 @@ body {
   }
 }
 @media (min-width: 576px) {
+  #es-rc #es-rc-content .es-colors {
+    padding: 32px;
+  }
+  #es-rc #es-rc-content .es-colors .es-title--bold {
+    font-size: 44px;
+  }
   #es-rc #es-rc-content .es-color__name {
     height: 60px;
     vertical-align: middle;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-colors {
+    padding: 48px;
+  }
+  #es-rc #es-rc-content .es-colors .es-title--bold {
+    font-size: 56px;
   }
 }
 #es-rc #es-rc-content .es-explore {

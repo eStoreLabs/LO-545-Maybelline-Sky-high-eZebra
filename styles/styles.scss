@@ -506,6 +506,7 @@ body {
 
     @media (min-width: 364px) {
         .es-colors {
+            padding: 24px;
 
             &__img {
                 position: relative;
@@ -518,14 +519,32 @@ body {
                 right: 2%;
                 width: 50%;
             }
+
         }
     }
 
     @media (min-width: 576px) {
+        .es-colors {
+            padding: 32px;
+        }
+
+        .es-colors .es-title--bold {
+            font-size: 44px;
+        }
 
         .es-color__name {
             height: 60px;
             vertical-align: middle;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .es-colors {
+            padding: 48px;
+        }
+
+        .es-colors .es-title--bold {
+            font-size: 56px;
         }
     }
 
