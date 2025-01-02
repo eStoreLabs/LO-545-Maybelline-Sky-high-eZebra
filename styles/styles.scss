@@ -53,11 +53,15 @@ body {
         font-family: $ff-accent;
         text-align: center;
         font-size: 34px;
-        font-weight: 700;
+        font-weight: 500;
         text-wrap: balance;
         background: $text-gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        &--bold {
+            font-weight: 700;
+        }
     }
 
     .es-text-accent {
@@ -330,6 +334,67 @@ body {
     @media (min-width: 880px) {
         .es-features__slideCtn .es-title {
             font-size: 50px;
+        }
+    }
+
+    /**************************************/
+    /******** brush img styles ************/
+    /**************************************/
+
+    .es-line {
+        height: 4px;
+        background-color: $color-accent;
+    }
+
+    .es-brush {
+        background: $gradient;
+
+        &__top,
+        &__bottom {
+            padding: 16px;
+        }
+
+    }
+
+    @media (min-width: 576px) {
+        .es-brush {
+            &__bg {
+                position: relative;
+                z-index: 0;
+            }
+
+            &__top,
+            &__bottom {
+                padding: 0;
+            }
+
+            &__top {
+                position: absolute;
+                top: 3%;
+                left: 3%;
+                width: 300px;
+                z-index: 1;
+            }
+
+            &__bottom {
+                position: absolute;
+                bottom: 3%;
+                right: 3%;
+                width: 250px;
+                z-index: 1;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .es-brush {
+            &__top {
+                top: 10%;
+            }
+
+            &__bottom {
+                bottom: 10%;
+            }
         }
     }
 
