@@ -26,6 +26,9 @@ body {
   /*********** colors styles ************/
   /**************************************/
   /**************************************/
+  /********* explore sell styles ********/
+  /**************************************/
+  /**************************************/
   /******* cross sell styles ************/
   /**************************************/
   /**************************************/
@@ -356,9 +359,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  overflow: hidden;
 }
 #es-rc #es-rc-content .es-colors .es-color__BA img {
   width: 100%;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-colors .es-color__BA img:hover {
+  scale: 1.1;
 }
 #es-rc #es-rc-content .es-colors .es-color__after, #es-rc #es-rc-content .es-colors .es-color__before {
   position: relative;
@@ -415,6 +423,72 @@ body {
   #es-rc #es-rc-content .es-color__name {
     height: 60px;
     vertical-align: middle;
+  }
+}
+#es-rc #es-rc-content .es-explore {
+  background-color: rgba(8, 8, 15, 0.2470588235);
+  background-blend-mode: overlay;
+  padding: 16px;
+}
+#es-rc #es-rc-content .es-explore .es-title {
+  margin-bottom: 32px;
+}
+#es-rc #es-rc-content .es-explore__colorsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+#es-rc #es-rc-content .es-explore__single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  width: 80%;
+}
+#es-rc #es-rc-content .es-explore__singleImg {
+  width: 100%;
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-explore__singleImg img {
+  width: 100%;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content .es-explore__singleImg img:hover {
+  scale: 1.1;
+}
+#es-rc #es-rc-content .es-explore__singleName {
+  color: #FFFFFF;
+}
+#es-rc #es-rc-content .es-explore__name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-explore {
+    padding: 24px;
+  }
+  #es-rc #es-rc-content .es-explore__colorsWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  #es-rc #es-rc-content .es-explore__single {
+    width: 45%;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-explore {
+    padding: 32px;
+  }
+  #es-rc #es-rc-content .es-explore__single {
+    width: 23%;
   }
 }
 #es-rc #es-rc-content .es-cross {

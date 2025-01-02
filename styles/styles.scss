@@ -438,10 +438,16 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                overflow: hidden;
             }
 
             &__BA img {
                 width: 100%;
+                transition: all 200ms ease-in-out;
+            }
+
+            &__BA img:hover {
+                scale: 1.1;
             }
 
             &__after,
@@ -520,6 +526,90 @@ body {
         .es-color__name {
             height: 60px;
             vertical-align: middle;
+        }
+    }
+
+    /**************************************/
+    /********* explore sell styles ********/
+    /**************************************/
+
+    .es-explore {
+        background-color: #08080f3f;
+        background-blend-mode: overlay;
+        padding: 16px;
+
+        .es-title {
+            margin-bottom: 32px;
+        }
+
+        &__colorsWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__single {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+            width: 80%;
+        }
+
+        &__singleImg {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        &__singleImg img {
+            width: 100%;
+            transition: all 200ms ease-in-out;
+        }
+
+        &__singleImg img:hover {
+            scale: 1.1;
+        }
+
+        &__singleName {
+            color: $color-white;
+        }
+
+        &__name {
+            font-family: $ff-accent;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-explore {
+            padding: 24px;
+        }
+
+        .es-explore__colorsWrapper {
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .es-explore__single {
+            width: 45%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .es-explore {
+            padding: 32px;
+        }
+
+        .es-explore__single {
+            width: 23%;
         }
     }
 
