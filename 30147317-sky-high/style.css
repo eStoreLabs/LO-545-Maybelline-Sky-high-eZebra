@@ -427,7 +427,7 @@ body {
   left: 4px;
 }
 
-#es-rc #es-rc-content .es-colors .swiper2 {
+#es-rc #es-rc-content .es-colors .es-swiper2 {
   padding-inline: 16px;
   padding-block: 32px;
 }
@@ -468,24 +468,6 @@ body {
   background-color: #641A42;
 }
 
-@media (min-width: 364px) {
-  #es-rc #es-rc-content .es-colors {
-    padding: 24px;
-  }
-
-  #es-rc #es-rc-content .es-colors__img {
-    position: relative;
-  }
-
-  #es-rc #es-rc-content .es-colors .es-title {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 2%;
-    width: 50%;
-  }
-}
-
 @media (min-width: 576px) {
   #es-rc #es-rc-content .es-colors {
     padding: 32px;
@@ -503,7 +485,19 @@ body {
 
 @media (min-width: 1601px) {
   #es-rc #es-rc-content .es-colors {
-    padding: 48px;
+    padding: 24px;
+  }
+
+  #es-rc #es-rc-content .es-colors__img {
+    position: relative;
+  }
+
+  #es-rc #es-rc-content .es-colors .es-title {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 2%;
+    width: 50%;
   }
 
   #es-rc #es-rc-content .es-colors .es-title--bold {
@@ -620,7 +614,7 @@ body {
   height: 100px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1601px) {
   #es-rc #es-rc-content .es-explore__colorsWrapper {
     flex-direction: row;
     align-items: flex-start;
@@ -822,7 +816,6 @@ body {
   }
 
 }
-
 
 #es-rc #es-rc-content .es-footer {
   background-color: #000000;
